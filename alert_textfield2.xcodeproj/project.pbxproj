@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1A713E22CF19E900947DDD /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A713D22CF19E900947DDD /* Table.swift */; };
 		2BD3AA3622CE451700ECA516 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3AA3522CE451700ECA516 /* AppDelegate.swift */; };
 		2BD3AA3822CE451700ECA516 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3AA3722CE451700ECA516 /* ViewController.swift */; };
 		2BD3AA3B22CE451700ECA516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD3AA3922CE451700ECA516 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1A713D22CF19E900947DDD /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		2BD3AA3222CE451700ECA516 /* alert_textfield2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alert_textfield2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD3AA3522CE451700ECA516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD3AA3722CE451700ECA516 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD3AA3522CE451700ECA516 /* AppDelegate.swift */,
+				2B1A713D22CF19E900947DDD /* Table.swift */,
 				2BD3AA3722CE451700ECA516 /* ViewController.swift */,
 				2BD3AA3922CE451700ECA516 /* Main.storyboard */,
 				2BD3AA3F22CE451B00ECA516 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				2BD3AA3822CE451700ECA516 /* ViewController.swift in Sources */,
 				2BD3AA3622CE451700ECA516 /* AppDelegate.swift in Sources */,
+				2B1A713E22CF19E900947DDD /* Table.swift in Sources */,
 				2BD3AA3E22CE451700ECA516 /* alert_textfield2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
