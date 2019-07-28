@@ -45,12 +45,21 @@ class Table: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
 //------------CODE TO DELETE A ROW IN TABLE VIEW----//
     
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == UITableViewCell.EditingStyle.delete {
-//            name_array.remove(at: indexPath.row)
-//            tableviewoutlet.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
-//        }
-//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            
+            let item = name_array[indexPath.row]
+            name_array.remove(at: indexPath.row)
+            context.delete(item)
+            
+            do {
+                try context.save()
+            } catch {
+                print("Error deleting items with \(error)")
+            }
+            tableviewoutlet.deleteRows(at: [indexPath], with: .automatic)  //includes updating UI so reloading is not necessary
+        }
+    }
  //----------END OF ROW DELETING CODE--------------//
     
     
